@@ -7,4 +7,4 @@ mvn clean install
 ```
 
 ## Table of contents
-* [JPA samples](spring-data-jpa-samples/README.md)
+* [JPA samples](spring-data-jpa-samples)
