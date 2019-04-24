@@ -8,3 +8,4 @@ mvn clean install
 
 ## Table of contents
 * [JPA samples](spring-data-jpa-samples)
+* [Jasypt samples](spring-boot-jasypt-samples)

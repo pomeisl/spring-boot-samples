@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>org.pomeisl.samples.jpa</groupId>
     <artifactId>spring-data-jpa-samples</artifactId>
     <packaging>pom</packaging>
 
