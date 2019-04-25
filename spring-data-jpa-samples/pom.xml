@@ -15,6 +15,7 @@
 
     <modules>
         <module>spring-data-jpa-embedded</module>
+        <module>spring-data-jpa-projections</module>
     </modules>
 
 </project>

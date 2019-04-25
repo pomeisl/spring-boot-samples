@@ -9,19 +9,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.jdbc.Sql;
-import org.springframework.test.context.jdbc.SqlGroup;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.context.jdbc.Sql.ExecutionPhase.AFTER_TEST_METHOD;
-import static org.springframework.test.context.jdbc.Sql.ExecutionPhase.BEFORE_TEST_METHOD;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest
-@SqlGroup({
-        @Sql(executionPhase = BEFORE_TEST_METHOD, scripts = "classpath:beforeTestRun.sql"),
-        @Sql(executionPhase = AFTER_TEST_METHOD, scripts = "classpath:afterTestRun.sql")
-})
+@Sql(scripts = "classpath:beforeTestRun.sql")
+@Sql(scripts = "classpath:afterTestRun.sql", executionPhase = AFTER_TEST_METHOD)
 @ActiveProfiles("test")
 public class UserRepositoryTest {
 
