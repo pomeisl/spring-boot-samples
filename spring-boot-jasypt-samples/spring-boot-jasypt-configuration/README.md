@@ -1,6 +1,6 @@
 ## Spring Boot - Configuration with Jasypt
 
-Ecrypted variables are in the property files. The encryptor password shouldn't be stored in properties file, it should be rather be passed as a system variable, command line argument or environment variable.
+The encryptor password shouldn't be stored in properties file, it should be rather be passed as a system variable, command line argument or environment variable.
 
 ### Depencency
 
